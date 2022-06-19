@@ -1,0 +1,93 @@
+body{
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+header{
+    background-color: hsl(208, 11%, 55%);
+    background-image: url(images/bg-hero-desktop.svg);
+}
+h1{
+    font-family: 'Poppins', sans-serif;
+}
+
+img{
+    width: 100%;
+}
+
+.container{
+    padding: 5% 7%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 96px;
+}
+
+.nav-text{
+    background-color: white;
+    margin: 8px 0;
+    border-radius: 40px;
+    color: hsl(192, 100%, 9%);
+    padding: 7px 20px;
+    text-align: center;
+    width: 18%;
+    border: none;
+}
+
+.grid-box{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    overflow: visible;
+    align-items: center;
+}
+
+.grid-item2{
+    margin-left: 48px;
+}
+
+.sub-btn{
+    background-color: white;
+    margin: 8px 0;
+    border-radius: 40px;
+    background-color: hsl(322, 100%, 66%);
+    color: white;
+    padding: 7px 20px;
+    text-align: center;
+    width: 40%;
+    height: 48px;
+    border: none;
+}
+
+main{
+    margin: 96px auto 96px auto;
+}
+/* Create a white card with some shadow around it */
+.card {
+    padding: 48px 24px 48px 96px;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 24px;
+    box-shadow: -7px -7px 20px rgba(0, 0, 0, 0.2),
+                 7px  7px 20px rgba(0, 0, 0, 0.2)
+  }
+
+footer{
+    background-color: hsl(192, 100%, 9%);
+}
+
+.grid2{
+    display: grid;
+    /* grid-template-columns: repeat(4, 1fr); */
+    grid-template-columns: 25% 25% 25% 25%;
+    gap: 48px;
+    align-items: center;
+}
+
+.contact-info{
+    display: flex;
+    
+}
