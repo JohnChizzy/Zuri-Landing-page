@@ -34,7 +34,8 @@ nav{
     color: hsl(192, 100%, 9%);
     padding: 7px 20px;
     text-align: center;
-    width: 18%;
+    width: 192px;
+    height: 48px;
     border: none;
 }
 
@@ -50,22 +51,23 @@ nav{
 }
 
 .sub-btn{
-    background-color: white;
     margin: 8px 0;
     border-radius: 40px;
     background-color: hsl(322, 100%, 66%);
     color: white;
     padding: 7px 20px;
     text-align: center;
-    width: 40%;
+    width: 216px;
     height: 48px;
     border: none;
+    cursor: pointer;
 }
 
+/* Main */
 main{
-    margin: 96px auto 96px auto;
+    margin: 96px auto 192px auto;
 }
-/* Create a white card with some shadow around it */
+/* White card with some shadow around it */
 .card {
     padding: 48px 24px 48px 96px;
     background-color: white;
@@ -75,19 +77,176 @@ main{
                  7px  7px 20px rgba(0, 0, 0, 0.2)
   }
 
+  main .grid-box{
+    position: relative;
+  }
+
+  main .grid-box:hover{
+    animation: myAnimation;
+    animation-duration: 2s;
+  }
+
+  /* Animation */
+  @keyframes myAnimation{
+    0% {right: 0px;}
+    50% {right: 300px}
+    100% {right: 0px}
+  }
+
+
+  /* Footer */
+
 footer{
     background-color: hsl(192, 100%, 9%);
+    color: white;
 }
+
+.small-box{
+    border: 3px solid white;
+    background-color: white;
+    text-align: center;
+    width: 666.5px;
+    /* height: 236px; */
+    border-radius: 10px;
+    position: relative;
+    margin: auto;
+    top: -192px;
+    padding: 55px 0;
+    transition: width 2s, transform 2s;
+    box-shadow: -7px -7px 20px rgba(0, 0, 0, 0.2),
+                 7px  7px 20px rgba(0, 0, 0, 0.2)
+}
+.small-box h2{
+    color: black;
+}
+
+    /* Transition */
+    .small-box:hover{
+        width: 750px;
+        transform: rotate(360deg);
+    }
+
+.ready-btn{
+    margin: 8px 0;
+    border-radius: 40px;
+    background-color: hsl(322, 100%, 66%);
+    color: white;
+    padding: 7px 20px;
+    text-align: center;
+    width: 40%;
+    height: 48px;
+    border: none;
+    cursor: pointer;
+    font-size: larger;
+    transition: width 2s;
+}
+    .ready-btn:hover{
+        height: 60px;
+    }
 
 .grid2{
     display: grid;
-    /* grid-template-columns: repeat(4, 1fr); */
-    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns: 30% 20% 20% 20%;
     gap: 48px;
-    align-items: center;
 }
 
 .contact-info{
-    display: flex;
+    display: grid;
+    grid-template-columns: 8% 91%;
+    gap: 12px;
+    align-items: center;
     
+}
+
+.contact-info img{
+    width: 13px;
+    height: 18px;
+}
+
+
+.footer-logo{
+    display: flex;
+    width: 240px;
+    height: 44px;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.social-icon{
+    margin: 24px 10px;
+}
+
+.copyright{
+    text-align: right;
+    padding: 20px;
+}
+
+@media(max-width: 500px){
+    body{
+        text-align: center;
+    }
+
+    header{
+        background-image: url(images/bg-hero-mobile.svg);
+    }
+    .grid-box{
+        grid-template-columns: 1fr;
+    }
+
+    .grid-item1, .grid-item2{
+        margin: 24px auto;
+    }
+
+    .nav-text{
+        width: 192px;
+        height: 36px;
+        padding-bottom: 24px;
+        margin: 8px 0 8px 24px;
+    }
+
+    .card{
+        padding: 48px 48px;
+    }
+    .small-box{
+        width: 95%;
+        transition: width 2s, transform 2s;
+    }
+        .small-box:hover{
+            width: 97%;
+            transform: rotate(360deg);
+        }
+        .small-box h2{
+            font-size: 18px;
+        }
+
+        .ready-btn{
+            width: 70%;
+            font-size: 16px;
+        }
+
+    .grid2{
+        grid-template-columns: 1fr;
+        text-align: left;
+        gap: 0;
+    }
+
+    .socials{
+        text-align: center;
+    }
+    .copyright{
+        text-align: center;
+        font-size: 14px;
+    }
+
+    main .grid-box:hover{
+        animation: myAnimation;
+        animation-duration: 2s;
+      }
+
+     /* Animation */
+    @keyframes myAnimation{
+        0% {right: 0px;}
+        50% {right: 100px}
+        100% {right: 0px}
+    }
 }
