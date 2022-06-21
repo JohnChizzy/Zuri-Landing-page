@@ -42,7 +42,10 @@ nav{
     height: 48px;
     border: none;
 }
-
+    .nav-text a{
+        color: hsl(192, 100%, 9%);
+    }
+    
 .grid-box{
     display: grid;
     grid-template-columns: 50% 50%;
