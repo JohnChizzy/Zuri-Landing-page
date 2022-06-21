@@ -11,6 +11,10 @@ h1{
     font-family: 'Poppins', sans-serif;
 }
 
+a{
+    text-decoration: none;
+}
+
 img{
     width: 100%;
 }
@@ -98,6 +102,10 @@ main{
 
 footer{
     background-color: hsl(192, 100%, 9%);
+    color: white;
+}
+
+footer a{
     color: white;
 }
 
